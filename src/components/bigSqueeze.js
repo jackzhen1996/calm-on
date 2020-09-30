@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Image, Text, View, TouchableOpacity } from 'react-native';
 import styles from '../stylesheets/techniques.styles'
 
-export default BigSqueeze =() => {
+const BigSqueeze =() => {
     const screens = [
         {
             image: require('./images/BigSqueeze/bigSq1.png')
@@ -46,3 +46,5 @@ export default BigSqueeze =() => {
     )
         
 }
+
+export default BigSqueeze

@@ -7,8 +7,8 @@ const Intro = ({title,statArray,about,helpful,start})=>{
     const [voice,setVoice] = useState(false)
 
     return(
-        <View style = {styles.container}>
-            {/*<Intro/>*/}
+            //{/*<Intro/>*/}
+            <View>
             <View style = {styles.upper}></View>
             <View style = {styles.lower}>
                 <Text style = {styles.title}>Box Breathing</Text>
@@ -28,7 +28,7 @@ const Intro = ({title,statArray,about,helpful,start})=>{
 
                 <View>
                     <Text style = {styles.statType}>Add to Favorite</Text>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress = {()=>start(true)}>
                             <Image style = {{marginLeft:'32%'}} source = {require('../../assets/favorite.png')}/>
                         </TouchableOpacity>
                 </View>
@@ -60,13 +60,13 @@ const Intro = ({title,statArray,about,helpful,start})=>{
 
                 <Text></Text>
             </View>
-        </View>
+            </View>
     )
 }
 
 const boxBreathing =()=>{
     //const [location,setLocation] = useState({x:100,y:500})
-    const [start,setStart] = useState(false)
+    const [start,setStart] = useState(true)
     const length1 = useRef(new Animated.Value(0)).current
     const length2 = useRef(new Animated.Value(300)).current
     const length3 = useRef(new Animated.Value(310)).current
@@ -75,7 +75,6 @@ const boxBreathing =()=>{
     //const height = useRef(new Animated.Value(10)).current
 
     useEffect(()=>{
-
     Animated.sequence([
         Animated.timing(
             move1,
@@ -152,6 +151,7 @@ const boxBreathing =()=>{
     const animated1 = {
         position: 'absolute',
         left:60,
+        top: 395,
         width: length1,
         borderWidth:10,
         borderColor:'#7990AF',
@@ -193,10 +193,11 @@ const boxBreathing =()=>{
     //}
 
     return (
-        //<Intro/>
         <View style = {styles.container}>
-            
-            {/*<View style = {styles.cover}></View>*/}
+            {/*{!start?
+            <Intro start = {setStart}/>:*/}
+            {/*//<View style = {styles.cover}></View>*/}
+            <View>
             <Animated.View style = {[animated1]}>
             </Animated.View>
             <Animated.View style = {styles.bottomFrame}></Animated.View>
@@ -215,6 +216,8 @@ const boxBreathing =()=>{
             <Animated.View style = {[move1.getLayout(),{position: 'absolute',zIndex:5}]}>
                 <Image source = {require('../../assets/boxBreathing/spirit.png')} />
             </Animated.View>
+            </View>
+            {/*}*/}
         </View>
     )
 }

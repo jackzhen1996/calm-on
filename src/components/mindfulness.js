@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, Text, View, TouchableOpacity } from 'react-native';
 import styles from '../stylesheets/mindfulness.styles'
 
-export default mindfulness = props=> {
+const mindfulness = props=> {
     return (
         <View style={styles.container}>
             <Text style={styles.text}>Here are some activities you can try to think more positively</Text>
@@ -26,3 +26,5 @@ export default mindfulness = props=> {
         </View>
     )
 }
+
+export default mindfulness

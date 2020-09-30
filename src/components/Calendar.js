@@ -49,6 +49,9 @@ export default Calendar =({navigation: { navigate} })=>{
         journals.push({journals:checkinObject[prop], _id:prop, date:prop})
     }
 
+    //for preview purpose only
+    journals.reverse()
+
 
     //const journals = []
     //const checkinObject= useSelector(state=>state.session.user.checkIns)
@@ -191,6 +194,7 @@ const style = StyleSheet.create({
     dates:{
         marginTop: '5%',
         height: '100%',
+        //borderWidth:1
     },
     hangerLeft:{
         position:'absolute',

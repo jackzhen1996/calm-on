@@ -3,7 +3,7 @@ import { Image, Text, View, TouchableOpacity } from 'react-native';
 import styles from '../stylesheets/techniques.styles'
 
 
-export default Techniques =()=> {
+const Techniques =()=> {
     const techniques = [
         {   
             image: require('./images/Technique/five.png'), 
@@ -62,3 +62,5 @@ export default Techniques =()=> {
        </View>
    )
 }
+
+export default Techniques

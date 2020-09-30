@@ -15,7 +15,7 @@ const moodMap = {
 
 export default DayIcon =({item,showJournal})=>{
     
-    const days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
+    //const days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
 
     return(
         <View>

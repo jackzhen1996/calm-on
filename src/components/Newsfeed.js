@@ -1,10 +1,12 @@
 import React from 'react';
 import { View,Text} from 'react-native';
 
-export default Newsfeed =()=>{
+const Newsfeed =()=>{
     return (
         <View >
             <Text>Newsfeed</Text>
         </View>
     )
 }
+
+export default Newsfeed

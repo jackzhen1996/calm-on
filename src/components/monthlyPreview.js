@@ -46,8 +46,7 @@ var currentMonth = date.getMonth()
 //            _id: '4'},
 //        ]
 
-
-export default MonthlyPreview =()=>{
+const MonthlyPreview =()=>{
     const navigation = useNavigation()
 
     //Get check-in object from redux
@@ -203,6 +202,8 @@ export default MonthlyPreview =()=>{
     //    theme = {theme} hideExtraDays = {true} firstDay = {1}/>
     //)
 }
+
+export default MonthlyPreview
 
 const styles = StyleSheet.create({
     container: {

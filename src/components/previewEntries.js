@@ -37,7 +37,7 @@ export const Box = ({mood,journal,time,image,showJournal,color,empty})=>{
 
 } 
 
-export default previewEntries = ({journals,date,showJournal})=>{
+const previewEntries = ({journals,date,showJournal})=>{
 
     //fake data
     const moodMap = {
@@ -71,6 +71,8 @@ export default previewEntries = ({journals,date,showJournal})=>{
     )
 }
 
+export default previewEntries
+
 const styles = StyleSheet.create({
     iconBox:{
         width: '25%',
@@ -87,6 +89,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         margin:'1.2%',
         marginTop:'2%',
+        backgroundColor:'#edf2f4',
         shadowColor:`rgba(0, 0, 0, 0.15)`,
         shadowOpacity: 1,
         shadowOffset: {width:0,height:0},

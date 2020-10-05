@@ -13,7 +13,7 @@ const moodMap = {
 }
 
 
-export default DayIcon =({item,showJournal})=>{
+const DayIcon =({item,showJournal})=>{
     
     //const days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
 
@@ -45,6 +45,8 @@ export default DayIcon =({item,showJournal})=>{
         </View>
     )
 }
+
+export default DayIcon
 
 const styles = StyleSheet.create({
     container:{

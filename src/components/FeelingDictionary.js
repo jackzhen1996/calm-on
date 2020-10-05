@@ -87,7 +87,7 @@ function singleFeeling(feeling) {
   );
 }
 
-export default FeelingDictionary = () => {
+const FeelingDictionary = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
@@ -99,3 +99,5 @@ export default FeelingDictionary = () => {
     </SafeAreaView>
   );
 };
+
+export default FeelingDictionary

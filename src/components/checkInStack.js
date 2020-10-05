@@ -6,7 +6,7 @@ import MonthlyView from './monthlyPreview'
 
 const Stack = createStackNavigator()
 
-export default checkinStack =()=>{
+const checkinStack =()=>{
 
     const headerOption = {
         headerLeft:null,
@@ -31,3 +31,5 @@ export default checkinStack =()=>{
         </Stack.Navigator>
     )
 }
+
+export default checkinStack

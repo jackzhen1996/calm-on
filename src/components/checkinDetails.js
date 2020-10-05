@@ -15,7 +15,7 @@ const moodMap = {
 }
 
 
-export default checkinDetails =({route})=>{
+const checkinDetails =({route})=>{
     const navigation = useNavigation()
     const {entry,allEntries,time} = route.params
 
@@ -121,6 +121,8 @@ export default checkinDetails =({route})=>{
 </View>
     )
 }
+
+export default checkinDetails
 
 const styles = StyleSheet.create({
     container:{

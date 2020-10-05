@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Button } from "react-native";
 import { StackActions } from "@react-navigation/native";
 
-export default Kpi = ({ navigation: { navigate } }) => {
+const Kpi = ({ navigation: { navigate } }) => {
   return (
     <View>
       <Text>KPI Screen</Text>
@@ -15,3 +15,5 @@ export default Kpi = ({ navigation: { navigate } }) => {
     </View>
   );
 };
+
+export default Kpi

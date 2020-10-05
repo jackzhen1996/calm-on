@@ -3,7 +3,7 @@ import { TextInput,ImageBackground, Text, View, TouchableOpacity, Image, Keyboar
 import styles from '../stylesheets/spriteChatStyles';
 
 
-export default spriteChat =props=> {
+const spriteChat =props=> {
 
     const [showOptions,setShow] = useState(false)
     
@@ -51,3 +51,5 @@ export default spriteChat =props=> {
         </View>
     )
 }
+
+export default spriteChat

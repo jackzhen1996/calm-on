@@ -6,11 +6,12 @@ import BigSqueeze from './bigSqueeze'
 import MonsterHug from './monsterHug'
 import { Image} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import mindfulness from './mindfulness';
 
 const Stack = createStackNavigator();
 
 
-export default  mindfulnessStack = props => {
+const mindfulnessStack = props => {
   const headerOptions1 ={
     headerBackTitleVisible: false,
     headerTitle: 'Mindfulness',
@@ -48,4 +49,6 @@ export default  mindfulnessStack = props => {
       
     );
   }
+
+  export default mindfulnessStack
   

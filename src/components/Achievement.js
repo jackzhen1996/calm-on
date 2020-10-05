@@ -1,11 +1,12 @@
 import React from 'react';
 import { View,Text} from 'react-native';
 
-
-export default Achievement =()=>{
+const Achievement =()=>{
     return (
         <View>
             <Text>Achievement</Text>
         </View>
     )
 }
+
+export default Achievement
